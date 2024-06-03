@@ -1,0 +1,179 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="Home.css" media="screen">
+    <style>
+        *{
+            text-align: right;
+        }
+        .form{
+            width: 1360px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            background-color: white;
+            padding: 20px;
+        }
+        .form form{
+            width: 50%;
+            padding: 20px;
+
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: gray 0px 0px 2px 0px;
+        }
+        .icon{
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .icon img{
+            width: 60%;
+        }
+        .container{
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+        }
+        .logo h4{
+          margin: 0;
+          padding: 0;
+          margin-left: 10px;
+          font-size: 1rem;
+        }
+        .logo{
+          display: flex;
+          align-items: center;
+          justify-content:center;
+        }
+        .logo img{
+          width:56px ;
+          height: 53px;
+        }
+        header{
+          background-color: white;
+          position: sticky;
+          width: 100%;
+          top: 0;
+          /* padding-top:20px ; */
+          box-shadow: gray 0px 0px 4px 0px;
+          height: 93px;
+        }
+        .menu1 ul{
+          display: flex;
+        }
+        li {
+          list-style: none;
+        }
+        .menu1 ul li a{
+          text-decoration: none;
+          
+        }
+        .menu1 ul li {
+          padding: 10px;
+          padding: 10px 26px;
+        }
+        .menu2{
+          display: none;
+        }
+        nav{
+          display: flex;
+          align-self: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- <header>
+      <nav>
+        <div class="container">
+            <div class="logo">
+               <a href="/">
+                   <img src="./images/Layer0.png" alt="logo">
+               </a> 
+               <h4>Lotus</h4>      
+            </div>
+            <div class="menu1">
+                <ul>
+                    <li class="activ"><a href="#">خانه</a></li>
+                    <li><a href="#">درباره ما</a></li>
+                    <li><a href="#">ارتباط با ما</a></li>
+                    <li><a href="#">استخدام</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="menu2">
+      <ul>
+          <li class="activ"><a href="#">خانه</a></li>
+          <li><a href="#">درباره ما</a></li>
+          <li><a href="#">ارتباط با ما</a></li>
+          <li><a href="#">استخدام</a></li>
+      </ul>
+  </div>
+  
+
+    </header> -->
+    <!-- <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form> -->
+      <div class="form">
+        <div class="icon">
+            <img src="./Programming-amico.png" alt="">
+        </div>
+    <form action="upload.php" method="post">
+        <div class="form-group">
+            <input type="text" name="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="نام">
+        <small id="emailHelp" class="form-text text-muted">نام و نام خانوادگی خودرا وارد کنید </small>
+        </div>
+        <div class="form-group">
+            <input type="number" name="age" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="سن">
+        <!-- <small id="emailHelp" class="form-text text-muted">نام و نام خانوادگی خودرا وارد کنید </small> -->
+        </div>
+        <div class="form-check">
+            <h3>توانایی ها</h3>
+            <input type="checkbox" name="skils[]" value="unreal" id = "unreal"/> <label>unreal</label>
+            <br/>
+            <input type="checkbox" name="skils[]" value="html"/> <label>html</label>
+            <input type="checkbox" name="skils[]" value="css"/> <label>css</label>
+            <input type="checkbox" name="skils[]" value="js"/> <label>js</label>
+            <br/>
+            <input type="checkbox" name="skils[]" value="react"/> <label>React</label>
+            <input type="checkbox" name="skils[]" value="nextjs"/> <label>Nextjs</label>
+            <input type="checkbox" name="skils[]" value="vue"/> <label>Vue</label>
+            <br/>
+            <input type="checkbox" name="skils[]" value="photoshop"/> <label>Photoshop</label>
+            <input type="checkbox" name="skils[]" value="blender"/> <label>Blender</label>
+            <input type="checkbox" name="skils[]" value="figmaa"/> <label>Figmaa</label>
+            <input type="checkbox" name="skils[]" value="3dmax"/> <label>3Dmax</label>
+        </div>
+        <div class="form-group">
+            <input type="text" name="github" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="لینک گیت هاب">
+        <small id="emailHelp" class="form-text text-muted">در صورت وجود وارد کنید  </small>
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">توضیحاتی درباره شما </label>
+            <textarea name="explain" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+        <button type="submit" class="btn btn-primary">ارسال</button>
+    </form>
+</div>        
+</body>
+</html>

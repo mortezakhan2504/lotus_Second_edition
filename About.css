@@ -1,0 +1,16 @@
+.u-section-1 .u-sheet-1 {
+  min-height: 400px;
+}
+@font-face {
+  font-family:"myfont";
+  src: url("./font/B\ Koodak\ Bold_YasDL.com.ttf");
+ }
+ *{
+  font-family:myfont !important;
+}
+@media screen and (max-width:1200px) {
+  .balabooly{
+    display:none;
+  }
+  
+}
